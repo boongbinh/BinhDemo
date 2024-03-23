@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BinhDemo.Models.Admin.Setting.GoogleForm.Form>
+
+
+@{
+    ViewBag.Title = "Danh sách Biểu mẫu";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    <a asp-controller="GoogleForm" asp-action="Create">Tạo Biểu mẫu mới</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên Biểu mẫu</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Form ID 1</td>
+            <td>Form Name 1</td>
+            <td>
+                <a href="Edit?id=FormId1">Chỉnh sửa</a> |
+                <a href="Delete?id=FormId1">Xóa</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

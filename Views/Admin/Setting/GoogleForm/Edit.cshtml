@@ -1,0 +1,19 @@
+﻿@model BinhDemo.Models.Admin.Setting.GoogleForm.Form
+
+@{
+    ViewBag.Title = "Edit Form";
+}
+
+<h2>Edit @Model.Name</h2>
+
+<form method="post">
+    <input type="hidden" id="formId" name="formId" value="">
+
+    <h3>Fields:</h3>
+    <ul id="fieldsList">
+    </ul>
+
+    <p><a href="#" id="addFieldLink" class="btn btn-success">Add Field</a></p>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
